@@ -1,0 +1,357 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header{
+        position: sticky;
+    }
+    header nav{
+        position: fixed;
+        top: 60px;
+        left: 1200px;
+        height: calc(100vh - 60px);
+        background: #0000ff;
+        width: 100%;
+        z-index: 1;
+        transition: .7s ease;
+        overflow: scroll;
+        padding-bottom: 20px;
+    }
+    header nav.active{
+        left: 0px;
+    }
+    header nav ul{
+        flex-direction: column;
+    }
+    header nav ul li{
+        margin-left: 0;
+        margin-top: 20px;
+        border-bottom: 1px solid #ffffff;
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+    header nav ul li a{
+        color: #ffffff;
+    }
+    nav a.scrolled{
+        color: #ffffff;
+    }
+    header nav ul li a:hover, header nav ul li a.active{
+        color: #000000;
+        padding: 5px 8px;
+        border-radius: 6px;
+    }
+    .school-link{
+        color: #ffffff;
+        margin-right: 20px;
+    }
+    .arrow-down{
+        display: none;
+    }
+    header .hamburger-container{
+        display: block;
+    }
+    /* -------HEADER-DROPDOWN---------- */
+    header nav ul li .dropdown-menu{
+        position: relative;
+        /* width: 100%; */
+    }
+    header nav ul li ul{
+        display: block;
+    }
+    header nav ul li ul li{
+        background: #1c187159;
+    }
+    header nav ul li ul li a{
+        color: #ffffff;
+    }
+    /* -------------HERO-SECTION---------- */
+    .slider{
+        max-width: 700px;
+    } 
+    .slide-note div{
+        margin-top: 20px;
+    }
+    .slide-note p{
+        color: #fff;
+        font: 400 1.2rem 'roboto',sans-serif;
+    }
+    .slide img {
+        filter: brightness(0.3);
+    }
+    /* ------------WELCOME NOTE------------ */
+    .welcome-item{
+        flex-direction: column-reverse;
+    }
+    .welcome-image{
+        width: 90%;
+        margin: 0 auto;
+        filter: brightness(0.6);
+    }
+    /* -----------BANNER------------ */
+    .banner div{
+       gap: 10px;
+    }
+    .banner div span{
+        font: 600 20px "alata";
+    }
+    /* -------------VISION AND MISSION-------- */
+    .vm-item .vision, .vm-item .mission{
+        width: 80%;
+        height: auto;
+    }
+    .vm-item{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    /* ------------TESTIMONY---------- */
+    .swiper {
+        max-width: 1000px;
+        width: 700px;
+        height: 450px;
+    }
+    /* ----------------BEST STUDENT----------- */
+    .top-student-container{
+        grid-template-columns: repeat(3, 2fr);
+    }
+    /*-----------------ACTIVITIES--------------------- */
+    .activity-container{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    /* -------------SOCIAL MEDIA--------- */
+    .social-activity{
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+    /*  ----------------FOOTER---------------*/
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        padding-left: 30px;
+        justify-items: center;
+        width: 100%;
+    }
+    .footer-container .about{
+        width: 100%;
+    }
+    .number{
+        display: none;
+    }
+    .footer-container .quick-link{
+        width: 60%;
+        margin-left: 80px;
+    }
+    .footer-container .quick-link .quick-link-container{
+        width: 100%;
+    }
+    .footer-container .quick-contact{
+        width: 100%;
+        margin-top: 50px;
+        /* border: 1px solid red; */
+    }
+}
+
+
+/* ----------------MOBILE----DESIGN----------------- */
+@media screen and (max-width: 767px) {
+    header{
+        position: sticky;
+        justify-content: space-between;
+    }
+    header .header-logo{
+        gap: 2px;
+    }
+    header .header-logo{
+        margin-left: -20px;
+    }
+    header .header-logo a img{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+    header .header-logo a{
+        font-size: 16px;
+    }
+    header nav{
+        position: fixed;
+        top: 60px;
+        left: 1200px;
+        height: calc(100vh - 60px);
+        background: #0000ff;
+        width: 100%;
+        z-index: 1;
+        transition: .7s ease;
+        overflow: scroll;
+        padding-bottom: 20px;
+    }
+    header nav.active{
+        left: 0px;
+    }
+    header nav ul{
+        flex-direction: column;
+    }
+    header nav ul li{
+        margin-left: 0;
+        margin-top: 20px;
+        border-bottom: 1px solid #ffffff;
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+    header nav ul li a{
+        color: #ffffff;
+    }
+    nav a.scrolled{
+        color: #ffffff;
+    }
+    header nav ul li a:hover, header nav ul li a.active{
+        color: #000000;
+        padding: 5px 8px;
+        border-radius: 6px;
+    }
+    header .hamburger-container{
+        display: block;
+        margin-right: 0px;
+    }
+    
+     /* -------HEADER-DROPDOWN---------- */
+     header nav ul li .dropdown-menu{
+        position: relative;
+        /* width: 100%; */
+    }
+    header nav ul li ul{
+        display: block;
+    }
+    header nav ul li ul li{
+        background: #1c187159;
+    }
+    header nav ul li ul li a{
+        color: #ffffff;
+    }
+    /* -------------HERO-SECTION---------- */
+    .slider{
+        max-width: 500px;
+        height: 400px;
+        border-radius: 0;
+    } 
+    .slide-note div{
+        margin-top: 20px;
+    }
+    .slide-note h3{
+        font-size: 30px;
+    }
+    .slide-note p{
+        color: #fff;
+        font: 400 1.2rem 'roboto',sans-serif;
+    }
+    .slide img {
+        filter: brightness(0.3);
+        height: 300px;
+    }
+    /* ------------WELCOME NOTE------------ */
+    .welcome-item{
+        flex-direction: column-reverse;
+    }
+    .welcome-image{
+        width: 90%;
+        margin: 0 auto;
+        filter: brightness(0.6);
+    }
+    /* ----------TOUR---------- */
+
+    .tour{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .tour iframe{
+        width: 300px;
+    }
+    /* -----------BANNER------------ */
+    .banner div{
+       gap: 10px;
+       flex-direction: column;
+    }
+    .banner div span{
+        font: 600 15px "alata";
+    }
+    /* -------------VISION AND MISSION-------- */
+    .vm-item .vision, .vm-item .mission{
+        width: 100%;
+        height: auto;
+    }
+    .vm-item{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    /* ------------TESTIMONY---------- */
+    .swiper {
+        max-width: 400px;
+        width: 100%;
+        height: 450px;
+    }
+    /* ----------------BEST STUDENT----------- */
+    .top-student-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-student-item img{
+        width: 300px;
+        height: 300px;
+    }
+    /*-----------------ACTIVITIES--------------------- */
+    .activity-container{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    /* -------------SOCIAL MEDIA--------- */
+    .social-activity{
+        flex-direction: column-reverse;
+        row-gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-activity h3{
+        text-align: center;
+
+    }
+    /*  ----------------FOOTER---------------*/
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+        width: 100%;
+    }
+    .footer-container .about{
+        width: 95%;
+    }
+    .footer-container .about-note p{
+        line-break: auto;
+    }
+    .number{
+        display: block;
+    }
+    .footer-container .quick-link{
+        margin-top: 50px;
+    }
+    .footer-title-two h3::before{
+        width: 35%;
+    }
+    .footer-container .quick-link .quick-link-container{
+        width: 100%;
+    }
+    .footer-container .quick-contact{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .copyright-container{
+        padding: 0 30px;
+        text-align: center;
+    }
+    .copyright-container span{
+       font-size: 14px;
+       font-family: "Alata";
+    }
+}

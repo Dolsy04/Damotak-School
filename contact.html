@@ -27,7 +27,7 @@
                     <nav class="dropdown-menu">
                         <ul>
                             <li><a href="academics-brief.html">Academic Brief</a></li>
-                            <li><a href="creche.html#creche" class="closeNav">Creche</a></li>
+                            <li><a href="creche.html" class="closeNav">Creche</a></li>
                             <li><a href="creche.html#nusery" class="closeNav">Nusery</a></li>
                             <li><a href="primary.html">Primary</a></li>
                             <li><a href="secondary.html">Secondary</a></li>
@@ -187,6 +187,8 @@
             <span><strong><a class="dolsy-tech" href="mailto:dollsy04@gmail.com">Dolsy Tech</a></strong></span>
         </div>
     </footer>
+
+
     <script>
         // -------------------CODE FOR CHANGING HEADER STYLE WHEN SCROLL
         window.addEventListener('scroll',()=>{
@@ -248,41 +250,7 @@
         closeNav.forEach(e =>{
             e.addEventListener('click',()=>{hamburger();});
         });
-        
-        // ----------------------CODE FOR IMAGE GALLERY---------
-        const imageGallery = document.querySelectorAll('.image-gallery');
-        const imageGalleryDisplay = document.querySelector('.image-gallery-display');
-
-        if(imageGallery){
-            imageGallery.forEach((gallery, index)=>{
-                gallery.addEventListener('click',()=>{
-                    document.querySelector('.gallery-display-container').style.display = 'block';
-                    const imageGalleryDisplay = document.querySelector('.image-gallery-display');
-                    imageGalleryDisplay.src = gallery.src;
-                    currentImage = index
-                })
-            })
-        }
-
-        const nextBtn = document.querySelector('.next');
-        const prevBtn = document.querySelector('.prev');
-        let currentImage = 0;
-
-        nextBtn.addEventListener('click',()=>{
-            currentImage = (currentImage + 1) % imageGallery.length;
-            imageGalleryDisplay.src = imageGallery[currentImage].src;
-        });
-        prevBtn.addEventListener('click',()=>{
-            currentImage = (currentImage - 1 + imageGallery.length) % imageGallery.length;
-            imageGalleryDisplay.src = imageGallery[currentImage].src;
-        })
-        function closeGallery(){
-            const closeGalleryIcon = document.querySelector('.close-gallery-icon');
-            closeGalleryIcon.addEventListener('click',()=>{
-                document.querySelector('.gallery-display-container').style.display = 'none';
-            })
-        }
-        closeGallery();
+   
 
         const copyrightYear = document.querySelector('.copyright-date');
 

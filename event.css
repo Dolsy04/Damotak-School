@@ -5,11 +5,11 @@
     scroll-behavior: smooth;
 }
 body {
-     background: url('/school-image/background-image-2.jpg') no-repeat #9f78fae0;
-     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-blend-mode: multiply;
+    background: url('./school-image/background-image-2.jpg') no-repeat #9f78fae0;
+    background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   background-blend-mode: multiply;
 }
 header{
     width: 100%;
